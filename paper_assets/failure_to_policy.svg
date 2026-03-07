@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">How failure becomes policy</title>
+  <desc id="desc">A diagram showing how repeated mistakes become guard scripts and durable repository policy.</desc>
+  <rect width="1200" height="720" fill="#f6f2eb"/>
+  <text x="600" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#1f2430">How Failure Becomes Policy</text>
+  <text x="600" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#5a6170">The repository turns repeated mistakes into durable operational memory</text>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2430" text-anchor="middle">
+    <rect x="95" y="300" width="210" height="110" rx="18" fill="#f3d7db" stroke="#a64d79" stroke-width="3"/>
+    <text x="200" y="346">Agent makes a</text>
+    <text x="200" y="378">repeatable mistake</text>
+
+    <line x1="305" y1="355" x2="395" y2="355" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="413,355 393,344 393,366" fill="#1f2430"/>
+
+    <rect x="415" y="300" width="210" height="110" rx="18" fill="#efe3cf" stroke="#b08968" stroke-width="3"/>
+    <text x="520" y="346">Human notices a</text>
+    <text x="520" y="378">recurring weakness</text>
+
+    <line x1="625" y1="355" x2="715" y2="355" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="733,355 713,344 713,366" fill="#1f2430"/>
+
+    <rect x="735" y="300" width="210" height="110" rx="18" fill="#dce9f5" stroke="#577590" stroke-width="3"/>
+    <text x="840" y="346">Repository adds a</text>
+    <text x="840" y="378">guard script or rule</text>
+
+    <line x1="945" y1="355" x2="1035" y2="355" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="1053,355 1033,344 1033,366" fill="#1f2430"/>
+
+    <rect x="955" y="300" width="150" height="110" rx="18" fill="#d7eadf" stroke="#4d8061" stroke-width="3"/>
+    <text x="1030" y="346">Future runs</text>
+    <text x="1030" y="378">fail earlier</text>
+  </g>
+
+  <path d="M1030 410 C1030 520 760 590 420 560" fill="none" stroke="#1f2430" stroke-width="3"/>
+  <polygon points="402,558 423,548 421,570" fill="#1f2430"/>
+  <text x="720" y="620" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#1f2430">The lesson becomes part of the toolchain</text>
+</svg>

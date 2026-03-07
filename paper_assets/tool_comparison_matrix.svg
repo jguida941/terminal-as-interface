@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tool comparison matrix</title>
+  <desc id="desc">A matrix comparing autocomplete, editor chat, terminal agent, and VoiceTerm across workflow capabilities.</desc>
+  <rect width="1400" height="760" fill="#f8f4ec"/>
+  <text x="700" y="66" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#1f2430">Tool Comparison Matrix</text>
+  <text x="700" y="102" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#5a6170">The more the tool participates in execution, the more governance matters</text>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2430">
+    <rect x="120" y="150" width="1160" height="520" rx="18" fill="#fffdf8" stroke="#9c8f7a" stroke-width="3"/>
+    <line x1="420" y1="150" x2="420" y2="670" stroke="#9c8f7a" stroke-width="2"/>
+    <line x1="635" y1="150" x2="635" y2="670" stroke="#9c8f7a" stroke-width="2"/>
+    <line x1="850" y1="150" x2="850" y2="670" stroke="#9c8f7a" stroke-width="2"/>
+    <line x1="1065" y1="150" x2="1065" y2="670" stroke="#9c8f7a" stroke-width="2"/>
+    <line x1="120" y1="230" x2="1280" y2="230" stroke="#9c8f7a" stroke-width="2"/>
+    <line x1="120" y1="310" x2="1280" y2="310" stroke="#e0d8ca" stroke-width="2"/>
+    <line x1="120" y1="390" x2="1280" y2="390" stroke="#e0d8ca" stroke-width="2"/>
+    <line x1="120" y1="470" x2="1280" y2="470" stroke="#e0d8ca" stroke-width="2"/>
+    <line x1="120" y1="550" x2="1280" y2="550" stroke="#e0d8ca" stroke-width="2"/>
+    <line x1="120" y1="630" x2="1280" y2="630" stroke="#e0d8ca" stroke-width="2"/>
+
+    <text x="180" y="200" font-weight="700">Capability</text>
+    <text x="527" y="200" text-anchor="middle" font-weight="700">Autocomplete</text>
+    <text x="742" y="200" text-anchor="middle" font-weight="700">Editor chat</text>
+    <text x="957" y="200" text-anchor="middle" font-weight="700">Terminal agent</text>
+    <text x="1172" y="200" text-anchor="middle" font-weight="700">VoiceTerm</text>
+
+    <text x="180" y="280">Completes local text</text>
+    <text x="180" y="360">Reads project files</text>
+    <text x="180" y="440">Edits project files</text>
+    <text x="180" y="520">Runs shell commands</text>
+    <text x="180" y="600">Answers to repo checks</text>
+    <text x="180" y="680">Accepts spoken input</text>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="34" text-anchor="middle">
+    <text x="527" y="280" fill="#4d8061">yes</text>
+    <text x="742" y="280" fill="#4d8061">yes</text>
+    <text x="957" y="280" fill="#4d8061">yes</text>
+    <text x="1172" y="280" fill="#4d8061">yes</text>
+
+    <text x="527" y="360" fill="#a64d79">limited</text>
+    <text x="742" y="360" fill="#b08968">often</text>
+    <text x="957" y="360" fill="#4d8061">yes</text>
+    <text x="1172" y="360" fill="#4d8061">yes</text>
+
+    <text x="527" y="440" fill="#a64d79">rare</text>
+    <text x="742" y="440" fill="#b08968">some</text>
+    <text x="957" y="440" fill="#4d8061">yes</text>
+    <text x="1172" y="440" fill="#4d8061">yes</text>
+
+    <text x="527" y="520" fill="#a64d79">no</text>
+    <text x="742" y="520" fill="#a64d79">rare</text>
+    <text x="957" y="520" fill="#4d8061">yes</text>
+    <text x="1172" y="520" fill="#4d8061">yes</text>
+
+    <text x="527" y="600" fill="#a64d79">weakly</text>
+    <text x="742" y="600" fill="#b08968">partly</text>
+    <text x="957" y="600" fill="#4d8061">yes</text>
+    <text x="1172" y="600" fill="#4d8061">yes</text>
+
+    <text x="527" y="680" fill="#a64d79">no</text>
+    <text x="742" y="680" fill="#a64d79">no</text>
+    <text x="957" y="680" fill="#a64d79">no</text>
+    <text x="1172" y="680" fill="#4d8061">yes</text>
+  </g>
+</svg>

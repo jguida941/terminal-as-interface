@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">Interface history timeline</title>
+  <desc id="desc">A timeline showing terminal computing, graphical IDEs, autocomplete, terminal agents, and voice driven terminal workflows.</desc>
+  <rect width="1400" height="620" fill="#f7f2ea"/>
+  <text x="700" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#1f2430">Interface History Timeline</text>
+  <text x="700" y="106" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#5a6170">The argument is historical as well as technical</text>
+
+  <line x1="140" y1="340" x2="1260" y2="340" stroke="#1f2430" stroke-width="4"/>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#1f2430" text-anchor="middle">
+    <circle cx="220" cy="340" r="18" fill="#577590"/>
+    <line x1="220" y1="210" x2="220" y2="322" stroke="#577590" stroke-width="3"/>
+    <rect x="120" y="130" width="200" height="80" rx="16" fill="#dce9f5" stroke="#577590" stroke-width="3"/>
+    <text x="220" y="165" font-size="24">Text terminals</text>
+    <text x="220" y="194" font-size="18">Unix era control surface</text>
+    <text x="220" y="392" font-size="20">1960s and 1970s</text>
+
+    <circle cx="500" cy="340" r="18" fill="#b08968"/>
+    <line x1="500" y1="340" x2="500" y2="452" stroke="#b08968" stroke-width="3"/>
+    <rect x="390" y="452" width="220" height="80" rx="16" fill="#efe3cf" stroke="#b08968" stroke-width="3"/>
+    <text x="500" y="487" font-size="24">Graphical IDEs</text>
+    <text x="500" y="516" font-size="18">Point and click development</text>
+    <text x="500" y="392" font-size="20">1990s and 2000s</text>
+
+    <circle cx="780" cy="340" r="18" fill="#a64d79"/>
+    <line x1="780" y1="210" x2="780" y2="322" stroke="#a64d79" stroke-width="3"/>
+    <rect x="660" y="130" width="240" height="80" rx="16" fill="#f3d7db" stroke="#a64d79" stroke-width="3"/>
+    <text x="780" y="165" font-size="24">Autocomplete era</text>
+    <text x="780" y="194" font-size="18">In editor AI assistance grows</text>
+    <text x="780" y="392" font-size="20">2010s and early 2020s</text>
+
+    <circle cx="1040" cy="340" r="18" fill="#4d8061"/>
+    <line x1="1040" y1="340" x2="1040" y2="452" stroke="#4d8061" stroke-width="3"/>
+    <rect x="910" y="452" width="260" height="80" rx="16" fill="#d7eadf" stroke="#4d8061" stroke-width="3"/>
+    <text x="1040" y="487" font-size="24">Terminal agents</text>
+    <text x="1040" y="516" font-size="18">Execution returns to the shell</text>
+    <text x="1040" y="392" font-size="20">2025 onward</text>
+
+    <circle cx="1220" cy="340" r="18" fill="#7b5ea7"/>
+    <line x1="1220" y1="210" x2="1220" y2="322" stroke="#7b5ea7" stroke-width="3"/>
+    <rect x="1095" y="130" width="250" height="80" rx="16" fill="#eadcf5" stroke="#7b5ea7" stroke-width="3"/>
+    <text x="1220" y="165" font-size="24">Voice driven terminal</text>
+    <text x="1220" y="194" font-size="18">Workflow orchestration by speech</text>
+    <text x="1220" y="392" font-size="20">VoiceTerm example</text>
+  </g>
+</svg>

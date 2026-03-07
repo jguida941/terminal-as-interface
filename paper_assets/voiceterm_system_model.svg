@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">VoiceTerm system model</title>
+  <desc id="desc">A layered diagram showing spoken input flowing through voice activity detection, speech to text, the VoiceTerm overlay, the terminal session, and AI coding tools.</desc>
+  <rect width="1200" height="760" fill="#f9f5ef"/>
+  <text x="600" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#1f2430">VoiceTerm System Model</text>
+  <text x="600" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#5a6170">Audio, overlay logic, and terminal agents form one continuous workflow</text>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#1f2430" text-anchor="middle">
+    <rect x="360" y="150" width="480" height="64" rx="16" fill="#f3d7db" stroke="#a64d79" stroke-width="3"/>
+    <text x="600" y="191">Spoken input</text>
+
+    <line x1="600" y1="214" x2="600" y2="246" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="600,264 589,244 611,244" fill="#1f2430"/>
+
+    <rect x="360" y="264" width="480" height="64" rx="16" fill="#dce9f5" stroke="#577590" stroke-width="3"/>
+    <text x="600" y="305">Voice activity detection</text>
+
+    <line x1="600" y1="328" x2="600" y2="360" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="600,378 589,358 611,358" fill="#1f2430"/>
+
+    <rect x="360" y="378" width="480" height="64" rx="16" fill="#efe3cf" stroke="#b08968" stroke-width="3"/>
+    <text x="600" y="419">Speech to text</text>
+
+    <line x1="600" y1="442" x2="600" y2="474" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="600,492 589,472 611,472" fill="#1f2430"/>
+
+    <rect x="360" y="492" width="480" height="64" rx="16" fill="#d7eadf" stroke="#4d8061" stroke-width="3"/>
+    <text x="600" y="533">VoiceTerm overlay and terminal session</text>
+
+    <line x1="600" y1="556" x2="600" y2="588" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="600,606 589,586 611,586" fill="#1f2430"/>
+
+    <rect x="360" y="606" width="480" height="64" rx="16" fill="#eadcf5" stroke="#7b5ea7" stroke-width="3"/>
+    <text x="600" y="647">Codex or Claude Code plus project checks</text>
+  </g>
+
+  <text x="165" y="305" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2430">Audio path</text>
+  <line x1="220" y1="300" x2="330" y2="300" stroke="#1f2430" stroke-width="2"/>
+
+  <text x="970" y="533" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2430">Policy and validation path</text>
+  <line x1="860" y1="528" x2="950" y2="528" stroke="#1f2430" stroke-width="2"/>
+</svg>
