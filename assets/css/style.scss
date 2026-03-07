@@ -1,46 +1,44 @@
---- --- @import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap');
+--- ---
 
 /* ============================================
    DESIGN TOKENS
    ============================================ */
 :root {
-  --bg-primary: #0f1219;
-  --bg-surface: #181d2a;
-  --bg-elevated: #1e2433;
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-medium: rgba(255, 255, 255, 0.1);
-  --text-primary: #e2e8f0;
-  --text-secondary: #94a3b8;
-  --text-heading: #f1f5f9;
-  --accent: #38bdf8;
-  --accent-hover: #7dd3fc;
-  --accent-muted: rgba(56, 189, 248, 0.12);
-  --accent-border: rgba(56, 189, 248, 0.25);
-  --shadow-glow: 0 0 30px rgba(56, 189, 248, 0.08);
+  --bg-page: #0b0e14;
+  --bg-card: #131620;
+  --bg-elevated: #1a1e2e;
+  --bg-hover: #222738;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.14);
+  --text-primary: #d1d5e0;
+  --text-secondary: #7c829a;
+  --text-heading: #eef0f6;
+  --accent: #3b9eff;
+  --accent-dim: rgba(59, 158, 255, 0.1);
+  --accent-border: rgba(59, 158, 255, 0.2);
+  --accent-hover: #6bb5ff;
+  --radius: 12px;
   --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-pill: 999px;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Outfit', var(--font-body);
+  --max-width: 780px;
 }
 
 /* ============================================
-   GLOBAL RESET & BASE
+   RESET & BASE
    ============================================ */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--bg-primary) !important;
-  color: var(--text-primary) !important;
-  font-family: var(--font-body) !important;
-  font-size: 16px !important;
-  line-height: 1.8 !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,280 +46,286 @@ body {
 /* ============================================
    LAYOUT
    ============================================ */
-.wrapper {
-  width: 100% !important;
-  max-width: 1100px !important;
-  margin: 0 auto !important;
-  padding: 0 32px !important;
-}
-
-header {
-  width: 260px !important;
-  padding-top: 56px !important;
-}
-
-header h1 {
-  font-family: var(--font-heading) !important;
-  font-weight: 800 !important;
-  font-size: 1.6rem !important;
-  color: var(--accent) !important;
-  margin-bottom: 16px !important;
-  letter-spacing: -0.01em !important;
-}
-
-header p {
-  color: var(--text-secondary) !important;
-  font-size: 0.85rem !important;
-  line-height: 1.6 !important;
-}
-
-header .view,
-header a {
-  font-family: var(--font-body) !important;
-  color: var(--accent) !important;
-  font-size: 0.85rem !important;
-}
-
-section {
-  width: 780px !important;
-  padding-bottom: 80px !important;
-  padding-top: 56px !important;
+.site-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* ============================================
-   TYPOGRAPHY
+   HEADER
    ============================================ */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading) !important;
-  color: var(--text-heading) !important;
-  font-weight: 700 !important;
-  line-height: 1.3 !important;
+.site-header {
+  padding: 48px 0 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
 }
 
-h1 {
-  font-size: 2rem !important;
-  margin-top: 0 !important;
-  margin-bottom: 24px !important;
-  letter-spacing: -0.02em !important;
+.site-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  display: block;
+  margin-bottom: 8px;
 }
 
-h2 {
-  font-size: 1.5rem !important;
-  margin-top: 56px !important;
-  margin-bottom: 20px !important;
-  padding-bottom: 12px !important;
-  border-bottom: 1px solid var(--border-subtle) !important;
+.site-logo span {
+  color: var(--accent);
 }
 
-h3 {
-  font-size: 1.2rem !important;
-  margin-top: 40px !important;
-  margin-bottom: 16px !important;
+.site-logo:hover {
+  text-decoration: none;
 }
 
-p,
-li {
-  color: var(--text-primary) !important;
-  line-height: 1.8 !important;
-}
-
-strong,
-b {
-  color: var(--text-heading) !important;
+.site-tagline {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* ============================================
-   LINKS
+   NAVIGATION
    ============================================ */
-a {
-  color: var(--accent) !important;
-  text-decoration: none !important;
-  transition: color 0.2s ease !important;
+.page-nav {
+  display: flex;
+  gap: 8px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
 }
 
-a:hover,
-a:focus {
-  color: var(--accent-hover) !important;
-  text-decoration: underline !important;
-  text-underline-offset: 3px !important;
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-hover);
+  color: var(--text-heading);
+  text-decoration: none;
+}
+
+.nav-btn.active {
+  background: var(--accent-dim);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+.nav-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 /* ============================================
-   NAVIGATION BAR
+   CONTENT TYPOGRAPHY
    ============================================ */
-.paper-nav {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 10px !important;
-  align-items: center !important;
-  margin: 24px 0 40px !important;
-  padding: 14px 20px !important;
-  background: var(--bg-surface) !important;
-  border: 1px solid var(--border-medium) !important;
-  border-radius: var(--radius-md) !important;
-  box-shadow: var(--shadow-glow) !important;
-  font-family: var(--font-body) !important;
+.content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.25;
+  margin-bottom: 24px;
+  letter-spacing: -0.025em;
 }
 
-.paper-nav span {
-  font-size: 11px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.12em !important;
-  text-transform: uppercase !important;
-  color: var(--text-secondary) !important;
-  margin-right: 6px !important;
+.content h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.3;
+  margin-top: 56px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
 }
 
-.paper-nav a {
-  display: inline-flex !important;
-  align-items: center !important;
-  padding: 8px 16px !important;
-  border-radius: var(--radius-pill) !important;
-  background: var(--accent-muted) !important;
-  color: var(--accent) !important;
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  border: 1px solid var(--accent-border) !important;
-  transition: all 0.25s ease !important;
+.content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-top: 40px;
+  margin-bottom: 12px;
 }
 
-.paper-nav a:hover,
-.paper-nav a:focus {
-  background: rgba(56, 189, 248, 0.2) !important;
-  color: #fff !important;
-  border-color: rgba(56, 189, 248, 0.5) !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.2) !important;
-  text-decoration: none !important;
+.content p {
+  margin-bottom: 16px;
+  color: var(--text-primary);
 }
 
-.paper-nav a.nav-active {
-  background: var(--accent) !important;
-  color: #0f1219 !important;
-  border-color: var(--accent) !important;
-  font-weight: 700 !important;
-  pointer-events: none !important;
+.content a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-/* ============================================
-   IMAGES & CHARTS
-   ============================================ */
-section img {
-  display: block !important;
-  max-width: 100% !important;
-  margin: 32px auto !important;
-  padding: 20px !important;
-  background: #ffffff !important;
-  border: 1px solid var(--border-medium) !important;
-  border-radius: var(--radius-lg) !important;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3) !important;
+.content a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.content strong,
+.content b {
+  color: var(--text-heading);
+  font-weight: 600;
 }
 
 /* ============================================
    LISTS
    ============================================ */
-ol,
-ul {
-  padding-left: 24px !important;
+.content ol,
+.content ul {
+  padding-left: 24px;
+  margin-bottom: 16px;
 }
 
-li {
-  margin-bottom: 6px !important;
+.content li {
+  margin-bottom: 6px;
+  color: var(--text-primary);
 }
 
-li::marker {
-  color: var(--accent) !important;
-  font-weight: 600 !important;
+.content li::marker {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ============================================
+   IMAGES & SVG CHARTS
+   ============================================ */
+.content img {
+  display: block;
+  max-width: 100%;
+  margin: 32px 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================
    CODE
    ============================================ */
-code {
-  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace !important;
-  font-size: 0.85em !important;
-  background: var(--bg-elevated) !important;
-  color: var(--accent-hover) !important;
-  border-radius: 5px !important;
-  padding: 2px 7px !important;
-  border: 1px solid var(--border-subtle) !important;
+.content code {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.85em;
+  background: var(--bg-elevated);
+  color: var(--accent-hover);
+  padding: 2px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
 }
 
-pre {
-  background: var(--bg-surface) !important;
-  border: 1px solid var(--border-subtle) !important;
-  border-radius: var(--radius-md) !important;
-  padding: 16px 20px !important;
-  overflow-x: auto !important;
+.content pre {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  overflow-x: auto;
+  margin-bottom: 16px;
 }
 
-pre code {
-  padding: 0 !important;
-  background: transparent !important;
-  border: none !important;
-  color: var(--text-primary) !important;
+.content pre code {
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--text-primary);
 }
 
 /* ============================================
    BLOCKQUOTE
    ============================================ */
-blockquote {
-  margin: 28px 0 !important;
-  padding: 20px 24px !important;
-  border-left: 3px solid var(--accent) !important;
-  background: var(--bg-surface) !important;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
-  color: var(--text-secondary) !important;
+.content blockquote {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-card);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   HIDE OLD NAV (from markdown files)
+   ============================================ */
+.paper-nav {
+  display: none;
 }
 
 /* ============================================
    FOOTER
    ============================================ */
-footer {
-  color: var(--text-secondary) !important;
-  border-top: 1px solid var(--border-subtle) !important;
-  padding-top: 24px !important;
-  margin-top: 48px !important;
+.site-footer {
+  margin-top: 64px;
+  padding: 24px 0 48px;
+  border-top: 1px solid var(--border);
 }
 
-footer a {
-  color: var(--accent) !important;
+.site-footer p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-sub {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  opacity: 0.6;
 }
 
 /* ============================================
    RESPONSIVE
    ============================================ */
-@media print,
-screen and (max-width: 1120px) {
-  .wrapper {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 20px !important;
+@media screen and (max-width: 640px) {
+  .site-wrapper {
+    padding: 0 16px;
   }
 
-  header,
-  section {
-    float: none !important;
-    width: 100% !important;
+  .site-header {
+    padding-top: 32px;
   }
 
-  header {
-    padding-right: 0 !important;
-    padding-top: 32px !important;
+  .page-nav {
+    flex-direction: column;
+    gap: 6px;
   }
 
-  section {
-    border: 0 !important;
-    padding: 16px 0 48px !important;
+  .nav-btn {
+    width: 100%;
+    justify-content: flex-start;
   }
 
-  .paper-nav {
-    justify-content: center !important;
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .content img {
+    padding: 12px;
+    margin: 20px 0;
   }
 }

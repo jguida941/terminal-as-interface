@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="{{ '/' | relative_url }}" class="site-logo">Terminal <span>as Interface</span></a>
+        <p class="site-tagline">{{ site.description }}</p>
+      </div>
+    </header>
+
+    <nav class="page-nav">
+      <a href="{{ '/' | relative_url }}" class="nav-btn{% if page.permalink == '/' %} active{% endif %}">
+        <span class="nav-num">01</span> Overview
+      </a>
+      <a href="{{ '/paper_technical/' | relative_url }}" class="nav-btn{% if page.permalink == '/paper_technical/' %} active{% endif %}">
+        <span class="nav-num">02</span> Technical Companion
+      </a>
+      <a href="{{ '/paper_appendix/' | relative_url }}" class="nav-btn{% if page.permalink == '/paper_appendix/' %} active{% endif %}">
+        <span class="nav-num">03</span> Evidence Appendix
+      </a>
+    </nav>
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>Maintained by <a href="https://github.com/jguida941">jguida941</a></p>
+        <p class="footer-sub">Hosted on GitHub Pages</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
