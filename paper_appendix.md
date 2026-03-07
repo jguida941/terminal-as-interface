@@ -96,6 +96,32 @@ If you are a technical reader:
 2. Use this appendix to verify claims and inspect the repository snapshot
 3. Open the linked code and policy files directly
 
+## Evidence Index
+
+Every claim about VoiceTerm in this paper links to its source. For quick reference:
+
+| Evidence | Link |
+|---|---|
+| VoiceTerm repository | [github.com/jguida941/voiceterm](https://github.com/jguida941/voiceterm) |
+| Rust source (~87K LOC) | [rust/src/bin/voiceterm/](https://github.com/jguida941/voiceterm/tree/master/rust/src/bin/voiceterm) |
+| Python tooling (~55K LOC) | [dev/scripts/devctl/](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/devctl) |
+| 34 guard scripts | [dev/scripts/checks/](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/checks) |
+| Security footguns check | [check_rust_security_footguns.py](https://github.com/jguida941/voiceterm/blob/master/dev/scripts/checks/check_rust_security_footguns.py) |
+| Panic policy check | [check_rust_runtime_panic_policy.py](https://github.com/jguida941/voiceterm/blob/master/dev/scripts/checks/check_rust_runtime_panic_policy.py) |
+| Policy file (AGENTS.md) | [AGENTS.md](https://github.com/jguida941/voiceterm/blob/master/AGENTS.md) |
+| 12-step SOP | [Mandatory 12-step SOP](https://github.com/jguida941/voiceterm/blob/master/AGENTS.md#mandatory-12-step-sop-always) |
+| AI operating contract | [AI operating contract](https://github.com/jguida941/voiceterm/blob/master/AGENTS.md#ai-operating-contract-required) |
+| Error recovery protocol | [Error recovery protocol](https://github.com/jguida941/voiceterm/blob/master/AGENTS.md#error-recovery-protocol) |
+| Task router | [Task router](https://github.com/jguida941/voiceterm/blob/master/AGENTS.md#task-router-pick-one-class) |
+| Continuous improvement loop | [Continuous improvement loop](https://github.com/jguida941/voiceterm/blob/master/AGENTS.md#continuous-improvement-loop-required) |
+| Automation debt register | [AUTOMATION_DEBT_REGISTER.md](https://github.com/jguida941/voiceterm/blob/master/dev/audits/AUTOMATION_DEBT_REGISTER.md) |
+| Audit program | [dev/audits/](https://github.com/jguida941/voiceterm/tree/master/dev/audits) |
+| Engineering timeline | [ENGINEERING_EVOLUTION.md](https://github.com/jguida941/voiceterm/blob/master/dev/history/ENGINEERING_EVOLUTION.md) |
+| Changelog | [CHANGELOG.md](https://github.com/jguida941/voiceterm/blob/master/dev/CHANGELOG.md) |
+| Audio/voice pipeline | [rust/src/audio/](https://github.com/jguida941/voiceterm/tree/master/rust/src/audio) |
+| Latency measurement tool | [latency_measurement.rs](https://github.com/jguida941/voiceterm/blob/master/rust/src/bin/latency_measurement.rs) |
+| Usage guide (voice input) | [USAGE.md](https://github.com/jguida941/voiceterm/blob/master/guides/USAGE.md) |
+
 ## Revision Note
 
 Any quantitative statement in the paper should keep a date attached to it. The repository is active, so counts will change over time.
