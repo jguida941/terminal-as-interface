@@ -1,0 +1,155 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background: #f5f1ea;
+  color: #272727;
+  font: 18px/1.7 Georgia, "Times New Roman", serif;
+}
+
+.wrapper {
+  width: 1160px;
+}
+
+header {
+  width: 280px;
+}
+
+header h1,
+header p,
+header .view,
+header a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section {
+  width: 820px;
+  padding-bottom: 64px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1f2430;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 42px;
+}
+
+p,
+li {
+  color: #2a2e35;
+}
+
+a {
+  color: #9b3d12;
+}
+
+a:hover,
+a:focus {
+  color: #b65120;
+}
+
+section img {
+  display: block;
+  max-width: 100%;
+  margin: 24px auto;
+  padding: 12px;
+  background: #fffdf9;
+  border: 1px solid #e3d8c8;
+  border-radius: 16px;
+  box-shadow: 0 18px 38px rgba(31, 36, 48, 0.08);
+}
+
+.paper-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 18px 0 24px;
+  padding: 14px 18px;
+  background: #fffaf2;
+  border: 1px solid #e3d8c8;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(31, 36, 48, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.paper-nav span {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #756a5c;
+}
+
+.paper-nav a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #f1e5d4;
+  color: #7d300d;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.paper-nav a:hover,
+.paper-nav a:focus {
+  background: #ead5bc;
+  color: #5f2307;
+}
+
+ol {
+  padding-left: 24px;
+}
+
+code {
+  font-size: 0.9em;
+  background: #efe5d8;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+blockquote {
+  margin: 24px 0;
+  padding: 10px 18px;
+  border-left: 4px solid #c88953;
+  background: #fffaf3;
+}
+
+@media print, screen and (max-width: 1120px) {
+  div.wrapper {
+    width: auto;
+    margin: 0 20px;
+  }
+
+  header,
+  section {
+    float: none;
+    width: auto;
+  }
+
+  header {
+    padding-right: 0;
+  }
+
+  section {
+    border: 0;
+    padding: 20px 0 40px;
+  }
+}

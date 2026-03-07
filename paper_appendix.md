@@ -5,6 +5,13 @@ permalink: /paper_appendix/
 
 # The Terminal as Interface: Evidence Appendix
 
+<nav class="paper-nav">
+  <span>Read</span>
+  <a href="../">Overview</a>
+  <a href="../paper_technical/">Technical companion</a>
+  <a href="./">Evidence appendix</a>
+</nav>
+
 Return to the [public overview](../) or the [technical companion](../paper_technical/).
 
 ## Repository Snapshot
