@@ -5,24 +5,49 @@ permalink: /paper_appendix/
 
 # The Terminal as Interface: Evidence Appendix
 
-<nav class="paper-nav">
-  <span>Navigation</span>
-  <a href="../">&larr; 1. Overview</a>
-  <a href="../paper_technical/">&larr; 2. Technical Companion</a>
-  <a href="./" class="nav-active">3. Evidence Appendix</a>
-</nav>
+Return to the [full paper](../) or the [reader guide](../paper_technical/).
 
-Return to the [public overview](../) or the [technical companion](../paper_technical/).
+This appendix is now an optional verification surface. The authoritative
+narrative lives on the root paper. What follows is the repository snapshot,
+claim-to-evidence map, and publication-history audit used to rebuild that single
+paper from the repo's content-bearing history.
 
 ## Repository Snapshot
 
-This appendix records the repository snapshot used in the current paper draft. The counts below were taken on March 7, 2026 from the local repository state used for writing.
+This appendix records the repository snapshot rechecked on March 7, 2026 from
+the local repository state used for writing.
 
-1. `614` commits in the repository
+1. `616` commits in the repository
 2. `101` tags
-3. `34` top level guard scripts named `check_*.py` in [dev/scripts/checks](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/checks)
-4. about `65,565` lines in [rust/src/bin/voiceterm](https://github.com/jguida941/voiceterm/tree/master/rust/src/bin/voiceterm)
-5. about `42,974` lines in [dev/scripts/devctl](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/devctl)
+3. `35` top level guard scripts named `check_*.py` in [dev/scripts/checks](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/checks)
+4. about `65,741` lines in [rust/src/bin/voiceterm](https://github.com/jguida941/voiceterm/tree/master/rust/src/bin/voiceterm)
+5. over `44,000` lines of source and docs in [dev/scripts/devctl](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/devctl)
+6. first commit rechecked locally: `2025-11-06`
+7. local HEAD rechecked for this paper: `2026-03-07`
+
+## Publication History Audit
+
+The paper site had three meaningful content eras. The current root paper was
+rebuilt to absorb all of them.
+
+1. `ef08426` - initial single-page essay
+   - introduced the full narrative spine:
+     introduction, mechanics, case study, history, authorship, measurement,
+     labor, conclusion, evidence index
+2. `abd2636`, `87652e2`, `d8e060b`, `3904eec`
+   - compressed the site into an overview-first structure
+   - added or emphasized:
+     why this matters, main idea, glossary, nontechnical framing, and the
+     opening comparison figures
+3. `415cba7`
+   - split the site into overview + technical companion + appendix
+   - added unique support material:
+     abstract, scope and method, system model, HUD screenshot, workflow example,
+     failure-to-policy figure, timeline, limits section, claim-to-evidence map,
+     and reading-path guidance
+
+The current edition moves all of that core material back into the root paper so
+that no major section or figure depends on a secondary page.
 
 ## Core Evidence Surfaces
 
@@ -86,13 +111,13 @@ Read:
 
 If you are a non technical reader:
 
-1. Read the [public overview](../)
-2. Read the Conclusion in the [technical companion](../paper_technical/)
+1. Read the [full paper](../)
+2. Jump to [Why This Matters](../#stakes) and [Conclusion](../#conclusion)
 3. Return here only if you want to inspect the source links
 
 If you are a technical reader:
 
-1. Read the [technical companion](../paper_technical/)
+1. Read the [full paper](../)
 2. Use this appendix to verify claims and inspect the repository snapshot
 3. Open the linked code and policy files directly
 
@@ -103,9 +128,9 @@ Every claim about VoiceTerm in this paper links to its source. For quick referen
 | Evidence | Link |
 |---|---|
 | VoiceTerm repository | [github.com/jguida941/voiceterm](https://github.com/jguida941/voiceterm) |
-| Rust source (~87K LOC) | [rust/src/bin/voiceterm/](https://github.com/jguida941/voiceterm/tree/master/rust/src/bin/voiceterm) |
-| Python tooling (~55K LOC) | [dev/scripts/devctl/](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/devctl) |
-| 34 guard scripts | [dev/scripts/checks/](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/checks) |
+| Rust source (~65.7K LOC in current counted tree) | [rust/src/bin/voiceterm/](https://github.com/jguida941/voiceterm/tree/master/rust/src/bin/voiceterm) |
+| Devctl sources/docs (>44K LOC in current counted tree) | [dev/scripts/devctl/](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/devctl) |
+| 35 guard scripts | [dev/scripts/checks/](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/checks) |
 | Security footguns check | [check_rust_security_footguns.py](https://github.com/jguida941/voiceterm/blob/master/dev/scripts/checks/check_rust_security_footguns.py) |
 | Panic policy check | [check_rust_runtime_panic_policy.py](https://github.com/jguida941/voiceterm/blob/master/dev/scripts/checks/check_rust_runtime_panic_policy.py) |
 | Policy file (AGENTS.md) | [AGENTS.md](https://github.com/jguida941/voiceterm/blob/master/AGENTS.md) |
@@ -124,4 +149,6 @@ Every claim about VoiceTerm in this paper links to its source. For quick referen
 
 ## Revision Note
 
-Any quantitative statement in the paper should keep a date attached to it. The repository is active, so counts will change over time.
+Any quantitative statement in the paper should keep a date attached to it. The
+repository is active, so counts will change over time. This appendix should be
+read as the dated audit surface behind the current single-paper edition.
