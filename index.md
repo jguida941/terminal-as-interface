@@ -6,10 +6,10 @@ permalink: /
 # The Terminal as Interface: AI CLI Tools and the New Programming Workflow
 
 <nav class="paper-nav">
-  <span>Read</span>
-  <a href="./">Overview</a>
-  <a href="paper_technical/">Technical companion</a>
-  <a href="paper_appendix/">Evidence appendix</a>
+  <span>Navigation</span>
+  <a href="./" class="nav-active">1. Overview</a>
+  <a href="paper_technical/">2. Technical Companion &rarr;</a>
+  <a href="paper_appendix/">3. Evidence Appendix &rarr;</a>
 </nav>
 
 This page is the public overview version of the paper.

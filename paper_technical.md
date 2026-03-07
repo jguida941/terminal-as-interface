@@ -6,10 +6,10 @@ permalink: /paper_technical/
 # The Terminal as Interface: Technical Companion
 
 <nav class="paper-nav">
-  <span>Read</span>
-  <a href="../">Overview</a>
-  <a href="./">Technical companion</a>
-  <a href="../paper_appendix/">Evidence appendix</a>
+  <span>Navigation</span>
+  <a href="../">&larr; 1. Overview</a>
+  <a href="./" class="nav-active">2. Technical Companion</a>
+  <a href="../paper_appendix/">3. Evidence Appendix &rarr;</a>
 </nav>
 
 Return to the [public overview](../) or jump to the [evidence appendix](../paper_appendix/).
