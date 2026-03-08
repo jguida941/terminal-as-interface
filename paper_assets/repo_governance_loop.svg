@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Repository governance loop</title>
+  <desc id="desc">A serpentine workflow diagram showing how change classes route through AGENTS.md, bundle selection, local devctl and guard scripts, CI workflow families, failure triage and release gates, and publication sync for the paper site.</desc>
+  <rect width="1200" height="860" fill="#f7f3ea"/>
+
+  <text x="600" y="72" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#1f2430">Repository Governance Loop</text>
+  <text x="600" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#5a6170">VoiceTerm turns prompts into routed work, guarded checks, CI evidence, and synchronized publication updates</text>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#1f2430">
+    <text x="125" y="154" font-size="18">Local repo entry</text>
+    <text x="955" y="374" font-size="18">GitHub Actions lanes</text>
+    <text x="122" y="602" font-size="18">External publication surface</text>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#1f2430">
+    <rect x="70" y="180" width="240" height="116" rx="20" fill="#f3d7db" stroke="#a64d79" stroke-width="3"/>
+    <text x="190" y="216" text-anchor="middle" font-size="16" fill="#5a6170">1. task class</text>
+    <text x="190" y="250" text-anchor="middle" font-size="28">Change type</text>
+    <text x="190" y="278" text-anchor="middle" font-size="20">runtime, docs,</text>
+    <text x="190" y="304" text-anchor="middle" font-size="20">tooling, release</text>
+
+    <line x1="310" y1="238" x2="382" y2="238" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="400,238 380,227 380,249" fill="#1f2430"/>
+
+    <rect x="400" y="180" width="240" height="116" rx="20" fill="#dce9f5" stroke="#577590" stroke-width="3"/>
+    <text x="520" y="216" text-anchor="middle" font-size="16" fill="#5a6170">2. router</text>
+    <text x="520" y="248" text-anchor="middle" font-size="28">`AGENTS.md`</text>
+    <text x="520" y="276" text-anchor="middle" font-size="20">maps the task to</text>
+    <text x="520" y="302" text-anchor="middle" font-size="20">the required bundle</text>
+
+    <line x1="640" y1="238" x2="712" y2="238" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="730,238 710,227 710,249" fill="#1f2430"/>
+
+    <rect x="730" y="180" width="320" height="116" rx="20" fill="#efe3cf" stroke="#b08968" stroke-width="3"/>
+    <text x="890" y="216" text-anchor="middle" font-size="16" fill="#5a6170">3. bundle selection</text>
+    <text x="890" y="250" text-anchor="middle" font-size="28">Registry chooses scope</text>
+    <text x="890" y="279" text-anchor="middle" font-size="19">`bundle.runtime`  `bundle.docs`</text>
+    <text x="890" y="305" text-anchor="middle" font-size="19">`bundle.tooling`  `bundle.release`</text>
+
+    <line x1="1050" y1="296" x2="1050" y2="360" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="1050,378 1039,358 1061,358" fill="#1f2430"/>
+
+    <rect x="820" y="396" width="290" height="134" rx="20" fill="#eadcf5" stroke="#7b5ea7" stroke-width="3"/>
+    <text x="965" y="430" text-anchor="middle" font-size="16" fill="#5a6170">4. workflow families</text>
+    <text x="965" y="462" text-anchor="middle" font-size="27">CI and CD lanes</text>
+    <text x="965" y="490" text-anchor="middle" font-size="19">core quality  |  tooling policy</text>
+    <text x="965" y="516" text-anchor="middle" font-size="19">AI triage autonomy  |  release publish</text>
+
+    <line x1="820" y1="463" x2="748" y2="463" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="730,463 750,452 750,474" fill="#1f2430"/>
+
+    <rect x="420" y="396" width="310" height="134" rx="20" fill="#d7eadf" stroke="#4d8061" stroke-width="3"/>
+    <text x="575" y="430" text-anchor="middle" font-size="16" fill="#5a6170">5. local enforcement</text>
+    <text x="575" y="462" text-anchor="middle" font-size="27">`devctl` plus guards</text>
+    <text x="575" y="490" text-anchor="middle" font-size="19">`check-router`  `check --profile ...`</text>
+    <text x="575" y="516" text-anchor="middle" font-size="19">`check_*.py`  `docs-check`  `hygiene`</text>
+
+    <line x1="420" y1="463" x2="348" y2="463" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="330,463 350,452 350,474" fill="#1f2430"/>
+
+    <rect x="90" y="396" width="240" height="134" rx="20" fill="#dce9f5" stroke="#577590" stroke-width="3"/>
+    <text x="210" y="430" text-anchor="middle" font-size="16" fill="#5a6170">6. decision point</text>
+    <text x="210" y="462" text-anchor="middle" font-size="26">Failures route</text>
+    <text x="210" y="490" text-anchor="middle" font-size="19">`failure_triage.yml`</text>
+    <text x="210" y="516" text-anchor="middle" font-size="19">`release_preflight`</text>
+
+    <line x1="210" y1="530" x2="210" y2="600" stroke="#1f2430" stroke-width="3"/>
+    <polygon points="210,618 199,598 221,598" fill="#1f2430"/>
+
+    <rect x="70" y="636" width="330" height="126" rx="20" fill="#f3d7db" stroke="#a64d79" stroke-width="3"/>
+    <text x="235" y="670" text-anchor="middle" font-size="16" fill="#5a6170">7. outward sync</text>
+    <text x="235" y="702" text-anchor="middle" font-size="27">Updated paper and site</text>
+    <text x="235" y="730" text-anchor="middle" font-size="19">`publication-sync` watches drift</text>
+    <text x="235" y="756" text-anchor="middle" font-size="19">registry keeps claims tied to repo evidence</text>
+  </g>
+
+  <path d="M400 698 C560 770 840 760 980 640 C1080 554 1085 376 1010 296" fill="none" stroke="#1f2430" stroke-width="3"/>
+  <polygon points="996,302 1017,292 1014,314" fill="#1f2430"/>
+  <text x="713" y="814" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2430">Evidence from failures, releases, and publication drift feeds the next routed change</text>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#5a6170" font-size="16">
+    <text x="890" y="332" text-anchor="middle">`dev/scripts/devctl/bundle_registry.py`</text>
+    <text x="575" y="560" text-anchor="middle">terminal commands become enforceable boundaries</text>
+    <text x="965" y="560" text-anchor="middle">the same repo policy runs locally and in CI/CD</text>
+  </g>
+</svg>

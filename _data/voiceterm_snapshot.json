@@ -1,0 +1,76 @@
+{
+  "generated_at_utc": "2026-03-08T00:20:00+00:00",
+  "snapshot_date": "2026-03-07",
+  "snapshot_label": "March 7, 2026",
+  "first_commit_date": "2025-11-06",
+  "first_commit_label": "November 6, 2025",
+  "repo_url": "https://github.com/jguida941/voiceterm.git",
+  "repo_web_url": "https://github.com/jguida941/voiceterm",
+  "source_mode": "local-path",
+  "head_sha": "0dc01977e8f4",
+  "workflow_family_count": 4,
+  "workflow_families": [
+    {
+      "slug": "core-quality",
+      "name": "Core product quality",
+      "count": 11,
+      "count_display": "11",
+      "summary": "Runtime quality, latency, parser, memory, security, coverage, and mutation lanes."
+    },
+    {
+      "slug": "docs-process-policy",
+      "name": "Docs, process, and policy",
+      "count": 6,
+      "count_display": "6",
+      "summary": "Documentation linting, workflow policy, supply-chain review, tooling governance, and watchdog checks."
+    },
+    {
+      "slug": "ai-triage-autonomy",
+      "name": "AI triage and autonomy",
+      "count": 6,
+      "count_display": "6",
+      "summary": "Triage ingestion, bounded remediation loops, failure capture, and autonomous controller or swarm runs."
+    },
+    {
+      "slug": "release-publish",
+      "name": "Release and publish",
+      "count": 5,
+      "count_display": "5",
+      "summary": "Release preflight, package publishing, binary distribution, and provenance attestation."
+    }
+  ],
+  "stats": {
+    "commits": {
+      "value": 616,
+      "display": "616"
+    },
+    "tags": {
+      "value": 101,
+      "display": "101"
+    },
+    "guard_scripts": {
+      "value": 35,
+      "display": "35"
+    },
+    "workflows": {
+      "value": 28,
+      "display": "28"
+    },
+    "bundle_classes": {
+      "value": 4,
+      "display": "4"
+    },
+    "runtime_bundle_commands": {
+      "value": 20,
+      "display": "20"
+    },
+    "rust_runtime_lines": {
+      "value": 65741,
+      "display": "65,741"
+    },
+    "devctl_lines": {
+      "value": 44146,
+      "display": "44,146"
+    }
+  }
+}

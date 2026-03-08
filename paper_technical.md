@@ -3,6 +3,8 @@ title: "Reader Guide"
 permalink: /paper_technical/
 ---
 
+{% assign vt = site.data.voiceterm_snapshot %}
+
 # The Terminal as Interface: Reader Guide
 
 Return to the [full paper](../) or jump to the [evidence appendix](../paper_appendix/).
@@ -19,8 +21,8 @@ enter that long paper efficiently.
 Start with:
 
 1. [Why This Matters](../#stakes)
-2. [Introduction: From User to Builder](../#introduction)
-3. [How AI CLI Tools Actually Work](../#mechanics)
+2. [The Controlled System VoiceTerm Actually Exposes](../#control-system)
+3. [VoiceTerm as a Governed Case Study](../#voiceterm)
 4. [Who Is Affected and How Work Changes](../#labor)
 5. [Conclusion](../#conclusion)
 
@@ -30,8 +32,8 @@ Start with:
 
 1. [Abstract](../#abstract)
 2. [Scope and Method](../#method)
-3. [How AI CLI Tools Actually Work](../#mechanics)
-4. [VoiceTerm as a Case Study](../#voiceterm)
+3. [The Controlled System VoiceTerm Actually Exposes](../#control-system)
+4. [CI/CD Makes the Policy Durable](../#cicd)
 5. [Workflow Example](../#workflow)
 6. [Limits and Threats to Validity](../#limits)
 
@@ -40,9 +42,10 @@ Start with:
 Start with:
 
 1. [Why This Matters](../#stakes)
-2. [VoiceTerm as a Case Study](../#voiceterm)
-3. [Workflow Example](../#workflow)
-4. [Evidence Map](../#evidence)
+2. [Scope and Method](../#method)
+3. [CI/CD Makes the Policy Durable](../#cicd)
+4. [Workflow Example](../#workflow)
+5. [Evidence Map](../#evidence)
 
 ### Verification Reader
 
@@ -57,23 +60,23 @@ Start with:
 The main paper contains every major figure used across the site's history.
 
 1. [Figure 1. Tool comparison matrix](../#stakes)
-2. [Figure 2. Terminal control loop](../#mechanics)
-3. [Figure 3. VoiceTerm system model](../#voiceterm)
-4. [Figure 4. VoiceTerm HUD example](../#voiceterm)
-5. [Figure 5. Voice-driven prompt entry](../#voiceterm)
-6. [Figure 6. How failure becomes policy](../#workflow)
-7. [Figure 7. Interface history timeline](../#history)
+2. [Figure 2. VoiceTerm control plane map](../#control-system)
+3. [Figure 3. VoiceTerm HUD example](../#voiceterm)
+4. [Figure 4. Repository governance loop](../#workflow)
+5. [Figure 5. Interface history timeline](../#history)
 
 ## Snapshot Summary
 
-The March 7, 2026 paper revision was rechecked against the local VoiceTerm
-source tree used for writing and reflects:
+The current published revision pulls a VoiceTerm snapshot during site deploy and
+currently reflects:
 
-1. `616` commits
-2. `101` tags
-3. `35` top-level `check_*.py` guard scripts
-4. about `65,741` lines under `rust/src/bin/voiceterm`
-5. over `44,000` lines of source and docs under `dev/scripts/devctl`
+1. `{{ vt.stats.commits.display }}` commits
+2. `{{ vt.stats.tags.display }}` tags
+3. `{{ vt.stats.guard_scripts.display }}` top-level `check_*.py` guard scripts
+4. `{{ vt.stats.workflows.display }}` GitHub Actions workflow files
+5. `{{ vt.stats.bundle_classes.display }}` routed task classes
+6. about `{{ vt.stats.rust_runtime_lines.display }}` lines under `rust/src/bin/voiceterm`
+7. `{{ vt.stats.devctl_lines.display }}` lines of source and docs under `dev/scripts/devctl`
 
 ## Why This Page Still Exists
 
