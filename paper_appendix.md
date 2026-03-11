@@ -2,6 +2,7 @@
 title: "Evidence Appendix"
 permalink: /paper_appendix/
 ---
+{% assign vt = site.data.voiceterm_snapshot %}
 
 # The Terminal as Interface: Evidence Appendix
 
@@ -14,16 +15,16 @@ paper from the repo's content-bearing history.
 
 ## Repository Snapshot
 
-This appendix records the repository snapshot rechecked on March 7, 2026 from
-the local repository state used for writing.
+This appendix records the repository snapshot rechecked on
+{{ vt.snapshot_label }} from the local repository state used for writing.
 
-1. `616` commits in the repository
-2. `101` tags
-3. `35` top level guard scripts named `check_*.py` in [dev/scripts/checks](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/checks)
-4. about `65,741` lines in [rust/src/bin/voiceterm](https://github.com/jguida941/voiceterm/tree/master/rust/src/bin/voiceterm)
-5. over `44,000` lines of source and docs in [dev/scripts/devctl](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/devctl)
-6. first commit rechecked locally: `2025-11-06`
-7. local HEAD rechecked for this paper: `2026-03-07`
+1. `{{ vt.stats.commits.display }}` commits in the repository
+2. `{{ vt.stats.tags.display }}` tags
+3. `{{ vt.stats.guard_scripts.display }}` top level guard scripts named `check_*.py` in [dev/scripts/checks](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/checks)
+4. about `{{ vt.stats.rust_runtime_lines.display }}` lines in [rust/src/bin/voiceterm](https://github.com/jguida941/voiceterm/tree/master/rust/src/bin/voiceterm)
+5. over `{{ vt.stats.devctl_lines.display }}` lines of source and docs in [dev/scripts/devctl](https://github.com/jguida941/voiceterm/tree/master/dev/scripts/devctl)
+6. first commit rechecked locally: `{{ vt.first_commit_date }}`
+7. local HEAD short SHA rechecked for this paper: `{{ vt.head_sha }}`
 
 ## Publication History Audit
 
